@@ -3560,3 +3560,106 @@ div:last-child {
   }
 
 }
+
+/* ==================================
+   PRODUCT DELETE BUTTON
+   ================================== */
+
+.drawerActionsThree {
+  grid-template-columns:
+    1fr
+    1fr
+    1fr;
+}
+
+.dangerBtn {
+  border:
+    1px solid
+    #fecaca;
+
+  background:
+    #fff5f5;
+
+  color:
+    #b42318;
+
+  border-radius:
+    9px;
+
+  padding:
+    10px
+    12px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    7px;
+
+  font-weight:
+    600;
+
+  font-size:
+    13px;
+
+  cursor:
+    pointer;
+
+  transition:
+    0.15s;
+}
+
+.dangerBtn:hover {
+  background:
+    #fee2e2;
+
+  border-color:
+    #fca5a5;
+}
+
+.dangerBtn:disabled {
+  opacity:
+    0.55;
+
+  cursor:
+    not-allowed;
+}
+
+
+/* make 3 drawer buttons fit nicely */
+
+.drawerActionsThree
+.primaryBtn,
+.drawerActionsThree
+.secondaryBtn,
+.drawerActionsThree
+.dangerBtn {
+  padding-left:
+    8px;
+
+  padding-right:
+    8px;
+
+  white-space:
+    nowrap;
+}
+
+
+/* smaller screens */
+
+@media (
+  max-width: 600px
+) {
+
+  .drawerActionsThree {
+    grid-template-columns:
+      1fr;
+  }
+
+}
